@@ -101,7 +101,7 @@
 
     <script>
         // *** 1. CONFIGURATION: วาง Web App URL ของ Google Apps Script ที่คุณได้จากขั้นตอนที่ 2 ที่นี่ ***
-        const GAS_API_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE"; 
+        const GAS_API_URL = "https://script.google.com/macros/s/AKfycbzpOmA_mKknmAds9jRTlRmtpOl0CXDhhG0TTRvIWOOuR04echFUMS_8b5SN_OGs-xKp/exec"; 
         
         // สถานะเริ่มต้น
         let tasksData = [];
@@ -340,7 +340,7 @@
         // ------------------ INITIALIZATION ------------------
         window.onload = function() {
             // ตรวจสอบว่าได้เปลี่ยน URL หรือยัง
-            if (GAS_API_URL === "https://script.google.com/macros/s/AKfycbzpOmA_mKknmAds9jRTlRmtpOl0CXDhhG0TTRvIWOOuR04echFUMS_8b5SN_OGs-xKp/exec") {
+            if (GAS_API_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE") {
                 showMessage("🚨 กรุณาเปลี่ยน GAS_API_URL ในโค้ดก่อนใช้งาน!", false);
                 return;
             }
