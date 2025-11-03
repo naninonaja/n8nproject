@@ -340,7 +340,7 @@
         // ------------------ INITIALIZATION ------------------
         window.onload = function() {
             // ตรวจสอบว่าได้เปลี่ยน URL หรือยัง
-            if (GAS_API_URL === "https://script.google.com/macros/s/AKfycbzpOmA_mKknmAds9jRTlRmtpOl0CXDhhG0TTRvIWOOuR04echFUMS_8b5SN_OGs-xKp/exec") {
+            if (GAS_API_URL === "https://script.google.com/macros/library/d/1YMc35GWbvvQrdiRT3aYu-1De8N7fmM5Mx8amWm-xkbKreDRjAuzjzqOt/1") {
                 showMessage("🚨 กรุณาเปลี่ยน GAS_API_URL ในโค้ดก่อนใช้งาน!", false);
                 return;
             }
@@ -359,13 +359,3 @@
     </script>
 </body>
 </html>
-```
-eof
-
-### 🚨 **สิ่งที่ต้องทำหลังจากนี้ (สำคัญที่สุด)**
-
-1.  **คัดลอก GAS API URL:** นำ `Web App URL` ที่คุณได้จากขั้นตอนที่ 2 (การ Deploy)
-2.  **วางใน PWA:** เปิดไฟล์ **`index.html`** ที่เพิ่งสร้างขึ้นมา ค้นหาบรรทัดนี้:
-    ```javascript
-    const GAS_API_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE"; 
-    
